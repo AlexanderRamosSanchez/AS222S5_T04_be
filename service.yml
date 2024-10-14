@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: microservicios
+  name: microservicio
   namespace: vallegrande
 spec:
   selector:
-    app: microservicios
+    app: microservicio
   ports:
     - protocol: TCP
       port: 80
