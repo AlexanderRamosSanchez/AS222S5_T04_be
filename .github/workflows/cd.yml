@@ -5,6 +5,7 @@ on:
       - develop-spring
   pull_request:
     types: [opened, synchronize, reopened]
+    
 jobs:
   build:
     name: Build and analyze
