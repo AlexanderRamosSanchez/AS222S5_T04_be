@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: microservicio
-        image: diegoramos678/spring-reactive:latest
+        image: diegoramos678/spring-test:latest
         resources:
           requests:
             cpu: "100m"  # Asignación de CPU
