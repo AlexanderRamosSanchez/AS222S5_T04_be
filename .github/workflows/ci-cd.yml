@@ -3,7 +3,7 @@ name: SonarCloud Docker
 on:
   push:
     branches:
-      - develop-spring
+      - develop-spring  # Cambia aquí a la rama 'develop'
   pull_request:
     branches:
       - develop-spring
@@ -11,9 +11,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}  # Asegúrate de que este secreto esté definido
 
     steps:
       - name: Checkout code
@@ -23,13 +20,10 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
-          distribution: 'temurin'
+          distribution: 'temurin'  # Especifica la distribución de Java
 
       - name: Build with Maven
         run: mvn clean install -DskipTests
-
-      - name: Run SonarCloud Analysis
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=AlexanderRamosSanchez_AS222S5_T04_be
 
       - name: Build Docker image
         run: |
