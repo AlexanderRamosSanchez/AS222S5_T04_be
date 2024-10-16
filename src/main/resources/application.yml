@@ -14,6 +14,6 @@ spring:
 
 gemini:
   api:
-    key: ${API_KEY} AIzaSyDO05skHcsky6fyKZMcQoH_40-rmEX9TpE
-    #key: AIzaSyDO05skHcsky6fyKZMcQoH_40-rmEX9TpE
+    #key: ${API_KEY} #AIzaSyDO05skHcsky6fyKZMcQoH_40-rmEX9TpE
+    key: AIzaSyDO05skHcsky6fyKZMcQoH_40-rmEX9TpE
     url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent
