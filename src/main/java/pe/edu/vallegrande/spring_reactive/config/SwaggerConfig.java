@@ -15,7 +15,7 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         // Establece la URL directamente
-        String serverUrl = "https://expert-space-succotash-ww79rpqw4vp3vjgw-8080.app.github.dev";
+        String serverUrl = "https://potential-succotash-vxvg69jxrwp3wrjj-8080.app.github.dev";
 
         return new OpenAPI()
             .info(new Info()
